@@ -57,6 +57,7 @@
 		height: '500',
 		width: '500'
 	};
+	const begin = import.meta.env.VITE_NJIT
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -67,7 +68,7 @@
 		September, 2008 - May, 2013
 	</h4>
 	{#if $salary}
-		<h5 class="text-xl sm:text-2xl italic text-gray-50 tracking-tight">"Salary" - ${import.meta.env.VITE_NJIT}</h5>
+		<h5 class="text-xl sm:text-2xl italic text-gray-50 tracking-tight">"Salary" - ${begin}</h5>
 	{/if}
 	<ul role="list" class="divide-y divide-gray-200">
 		{#each yearData as { year, items }}

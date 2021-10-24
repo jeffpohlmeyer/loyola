@@ -26,7 +26,6 @@
 		'https://www.twitter.com/jvp3122'
 	];
 
-	console.log(import.meta.env);
 </script>
 
 <svelte:window on:keydown={handleKeydown} />

@@ -40,6 +40,9 @@
 		height: '500',
 		width: '500'
 	};
+
+	const begin = import.meta.env.VITE_METLIFE_STARTING;
+	const end = import.meta.env.VITE_METLIFE_ENDING;
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
@@ -51,7 +54,7 @@
 	</h4>
 	{#if $salary}
 		<h5 class="text-xl sm:text-2xl italic text-gray-50 tracking-tight">
-			Salary - ${import.meta.env.VITE_METLIFE_STARTING} -> ${import.meta.env.VITE_METLIFE_ENDING}
+			Salary - ${begin} -> ${end}
 		</h5>
 	{/if}
 	<ul role="list" class="divide-y divide-gray-200">
