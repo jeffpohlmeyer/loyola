@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import { routes } from '../router';
 	import { goto } from '$app/navigation';
-	import { salary, waves } from '../store';
+	import { waves } from '../store';
 
 	let path, previous, next, route;
 	$: path = $page.path;
@@ -24,21 +24,6 @@
 <div class="relative bg-gradient-to-r from-blue-700 to-red-500 text-gray-50">
 	<main class="min-h-[100vh] lg:min-h-[80vh] w-full m-0 p-0 md:mb-8 lg:mb-0">
 		<div class="w-full flex justify-end items-center pr-48 h-16">
-			<div class="relative flex items-start px-2">
-				<div class="flex items-center h-5">
-					<input
-						id="salary"
-						aria-describedby="salary-description"
-						name="salary"
-						type="checkbox"
-						class="focus:ring-blue-600 h-4 w-4 text-blue-700 border-gray-300 rounded"
-						bind:checked={$salary}
-					/>
-				</div>
-				<div class="ml-1 text-sm">
-					<label for="salary" class="font-medium text-gray-200">Show Salary Info</label>
-				</div>
-			</div>
 			<div class="relative flex items-start px-2">
 				<div class="flex items-center h-5">
 					<input
