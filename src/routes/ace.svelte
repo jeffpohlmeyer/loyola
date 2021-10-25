@@ -25,6 +25,9 @@
 	const begin = import.meta.env.VITE_ACE_GROUP
 </script>
 
+<svelte:head>
+	<title>ACE Group</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

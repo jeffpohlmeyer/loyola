@@ -23,6 +23,9 @@
 	const begin = import.meta.env.VITE_URBINT;
 </script>
 
+<svelte:head>
+	<title>Urbint</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

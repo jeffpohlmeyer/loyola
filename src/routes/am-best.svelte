@@ -26,6 +26,9 @@
 	const end = import.meta.env.VITE_AM_BEST_ENDING;
 </script>
 
+<svelte:head>
+	<title>AM Best</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

@@ -45,6 +45,9 @@
 	const end = import.meta.env.VITE_METLIFE_ENDING;
 </script>
 
+<svelte:head>
+	<title>MetLife</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

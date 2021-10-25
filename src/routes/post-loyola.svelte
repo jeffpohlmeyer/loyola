@@ -37,6 +37,9 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Post-Loyola</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

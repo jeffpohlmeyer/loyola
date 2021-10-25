@@ -40,6 +40,9 @@
 	const end = import.meta.env.VITE_NEW_YORK_LIFE_ENDING;
 </script>
 
+<svelte:head>
+	<title>New York Life</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

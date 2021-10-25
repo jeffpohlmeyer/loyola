@@ -60,6 +60,9 @@
 	const begin = import.meta.env.VITE_NJIT
 </script>
 
+<svelte:head>
+	<title>NJIT</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {fallback} {imgClass}>

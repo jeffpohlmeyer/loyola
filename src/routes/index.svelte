@@ -25,9 +25,11 @@
 		'https://www.linkedin.com/in/jeffrey-pohlmeyer',
 		'https://www.twitter.com/jvp3122'
 	];
-
 </script>
 
+<svelte:head>
+	<title>JVP.xyz</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 
 <ContentMain {images} {imgClass} {fallback}>
@@ -44,7 +46,7 @@
 			Senior Backend Software Engineer @
 			<a href="https://www.urbint.com" target="_blank">Urbint</a>
 		</p>
-		<div class='pt-3'>
+		<div class="pt-3">
 			{#each links as link}
 				<div class="py-0.5 text-md text-gray-300">
 					<a href={link} target="_blank">{link}</a>

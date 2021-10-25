@@ -4,6 +4,9 @@
 	const handleKeydown = (e) => useKeyboardNavigation($page.path, e);
 </script>
 
+<svelte:head>
+	<title>What's Next?</title>
+</svelte:head>
 <svelte:window on:keydown={handleKeydown} />
 <div class="relative lg:grid lg:gap-8 px-4 sm:px-6 lg:px-8 lg:place-content-center lg:mt-16">
 	<div class="h-huge w-huge text-gray-50">
