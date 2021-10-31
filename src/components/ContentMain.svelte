@@ -1,12 +1,9 @@
 <script>
-	export let images;
 	export let fallback;
 	export let imgClass;
 </script>
 
-<div
-	class="relative lg:grid lg:grid-cols-2 lg:gap-8 px-4 sm:px-6 lg:px-8"
->
+<div class="relative lg:grid lg:grid-cols-2 lg:gap-8 px-4 sm:px-6 lg:px-8">
 	<!-- LHS	-->
 	<div class="relative">
 		<slot />
@@ -39,15 +36,7 @@
 
 		<!--	image	-->
 		{#if !!fallback}
-			<picture>
-				{#if !!images && images.length}
-					{#each images as { srcset, type }}
-						<source {srcset} {type} />
-					{/each}
-				{/if}
-
-				<img class="mx-auto {imgClass}" {...fallback} />
-			</picture>
+			<img class="mx-auto {imgClass}" {...fallback} />
 		{/if}
 	</div>
 </div>
