@@ -76,7 +76,7 @@
 
 	{#if !!next}
 		<div
-			class="text-gray-200 absolute bottom-1/2 right-3 cursor-pointer transform hover:scale-125"
+			class="absolute bg-white rounded-full top-16 p-1 text-gray-600 md:text-gray-100 md:bg-transparent md:rounded-none md:top-1/2 right-3 cursor-pointer transform hover:scale-125"
 			on:click={handleNext}
 		>
 			<svg
@@ -92,7 +92,7 @@
 	{/if}
 	{#if !!previous}
 		<div
-			class="text-gray-200 absolute bottom-1/2 left-3 cursor-pointer transform hover:scale-125"
+			class="absolute bg-white rounded-full top-16 p-1 text-gray-600 md:text-gray-100 md:bg-transparent md:rounded-none md:top-1/2 left-3 cursor-pointer transform hover:scale-125"
 			on:click={handlePrevious}
 		>
 			<svg

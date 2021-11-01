@@ -2,8 +2,6 @@
 	import { page } from '$app/stores';
 	import ContentMain from '../components/ContentMain.svelte';
 
-	import { salary } from '../store';
-
 	import { useKeyboardNavigation } from '../utils/keyboard-navigation';
 	const handleKeydown = (e) => useKeyboardNavigation($page.path, e);
 
@@ -22,7 +20,6 @@
 		height: '500',
 		width: '500'
 	};
-	const begin = import.meta.env.VITE_ACE_GROUP
 </script>
 
 <svelte:head>
@@ -37,11 +34,6 @@
 	<h4 class="text-2xl sm:text-3xl font-semibold text-gray-50 tracking-tight">
 		May, 2013 - December, 2013
 	</h4>
-	{#if $salary}
-		<h5 class="text-xl sm:text-2xl italic text-gray-50 tracking-tight">
-			Salary - {begin}
-		</h5>
-	{/if}
 	<ul role="list" class="divide-y divide-gray-200">
 		<li class="py-4 flex">
 			<div class="ml-3">
