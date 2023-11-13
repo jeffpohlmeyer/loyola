@@ -55,9 +55,11 @@
           {#if subTitle}
             <p class="text-sm font-medium text-gray-300"><em>{subTitle}</em></p>
           {/if}
-          {#each items as item}
-            <p class="text-md text-gray-50">{@html item}</p>
-          {/each}
+          <ul class="list-inside list-disc space-y-0.5">
+            {#each items as item}
+              <li class="text-md text-gray-50">{@html item}</li>
+            {/each}
+          </ul>
         </div>
       </li>
     {/each}

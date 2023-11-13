@@ -34,13 +34,9 @@
   <h4 class="text-2xl font-semibold tracking-tight text-gray-50 sm:text-3xl">
     May, 2013 - December, 2013
   </h4>
-  <ul role="list" class="divide-y divide-gray-200">
-    <li class="flex py-4">
-      <div>
-        {#each things as thing}
-          <p class="text-md py-1 font-medium text-gray-200">{thing}</p>
-        {/each}
-      </div>
-    </li>
+  <ul role="list" class="list-inside list-disc space-y-2.5 pt-2">
+    {#each things as thing}
+      <li class="text-md font-medium text-gray-200">{thing}</li>
+    {/each}
   </ul>
 </ContentMain>

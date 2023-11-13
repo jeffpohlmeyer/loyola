@@ -5,9 +5,9 @@
   import { useKeyboardNavigation } from '$lib/utils/keyboard-navigation';
   const handleKeydown = (e: Event) => useKeyboardNavigation($page.url.pathname, e);
   const things = [
-    'Worked on FastAPI-based backend for a little bit.',
+    'Worked on a program called "Worker Safety" in a FastAPI-based backend for a little bit.',
     'Got loaned out to another group soon after joining.',
-    'Due to a fairly toxic work environment, as well as a horrendous manager, I left after 8 months.'
+    'Due to a difficult work environment, as well as a bad manager, I left after 8 months.'
   ];
 
   const imgClass = 'object-cover shadow-md rounded-3xl';
@@ -29,13 +29,9 @@
   <h4 class="text-2xl font-semibold tracking-tight text-gray-50 sm:text-3xl">
     October, 2021 - June, 2022
   </h4>
-  <ul role="list" class="divide-y divide-gray-200">
-    <li class="flex py-4">
-      <div>
-        {#each things as thing}
-          <p class="text-md py-1 font-medium text-gray-200">{thing}</p>
-        {/each}
-      </div>
-    </li>
+  <ul role="list" class="list-inside list-disc space-y-2.5 pt-2">
+    {#each things as thing}
+      <li class="text-md font-medium text-gray-200">{thing}</li>
+    {/each}
   </ul>
 </ContentMain>

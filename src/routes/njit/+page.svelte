@@ -8,11 +8,9 @@
     {
       year: 'September, 2008 - June, 2010',
       items: [
-        'The grad-school equivalent of core classes',
-        'Not much in the way of research opportunities',
-        'No real TA responsibilities',
-        'Sat for quals (3 sets)',
-        'Very minimal stipend'
+        'Took the grad-school equivalent of core classes',
+        'Not much in the way of research opportunities nor any real TA responsibilities',
+        'Sat for quals (3 sets)'
       ]
     },
     {
@@ -65,13 +63,13 @@
   </h4>
   <ul role="list" class="divide-y divide-gray-200">
     {#each yearData as { year, items }}
-      <li class="flex py-4">
-        <div>
-          <p class="text-sm font-medium text-gray-200">{year}</p>
+      <li class="py-4">
+        <p class="text-sm font-medium text-gray-200">{year}</p>
+        <ul class="list-inside list-disc space-y-0.5">
           {#each items as item}
-            <p class="text-md text-gray-50">{@html item}</p>
+            <li class="text-md text-gray-50">{@html item}</li>
           {/each}
-        </div>
+        </ul>
       </li>
     {/each}
   </ul>

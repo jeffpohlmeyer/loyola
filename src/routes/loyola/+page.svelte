@@ -18,7 +18,7 @@
       year: '2001-2002',
       items: [
         'Second year of primarily focusing on core classes.',
-        "Attended men's workshop in spring 2022 when I realized what I wanted to do with my life..."
+        "Attended men's retreat in spring 2022 when I realized what I wanted to do with my life..."
       ]
     },
     {
@@ -58,13 +58,13 @@
   </h4>
   <ul role="list" class="divide-y divide-gray-200">
     {#each yearData as { year, items }}
-      <li class="flex py-4">
-        <div>
-          <p class="text-sm font-medium text-gray-200">{year}</p>
+      <li class="py-4">
+        <p class="text-sm font-medium text-gray-200">{year}</p>
+        <ul class="list-inside list-disc space-y-0.5">
           {#each items as item}
-            <p class="text-md text-gray-50">{@html item}</p>
+            <li class="text-md text-gray-50">{@html item}</li>
           {/each}
-        </div>
+        </ul>
       </li>
     {/each}
   </ul>
