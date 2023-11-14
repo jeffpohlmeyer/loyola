@@ -24,10 +24,6 @@
         'Took exam QFI Core (Scored 6)',
         'Decided that, while studying for QFI Advanced, I no longer wanted to be an actuary'
       ]
-    },
-    {
-      year: 'Exams',
-      items: ['Took exam C in June, 2014 (Scored 5)', 'Took exam C in October, 2014 (Scored 7)']
     }
   ];
 
