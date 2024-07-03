@@ -1,1 +1,0 @@
-import{g as i}from"./entry.BvUpA8ML.js";import{r as n}from"./index.C5dDUu2X.js";async function f(r,o){const{previous:e,next:t}=n.find(a=>a.current===r)??{previous:null,next:null};o.keyCode===37&&e?await i(e):o.keyCode===39&&t&&await i(t)}export{f as u};
